@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from src.ccwc import count_bytes, count_lines, count_words
+from src.ccwc import count
 
 
 @pytest.fixture
@@ -14,19 +14,13 @@ def fp():
         yield f
 
 
-def test_count_bytes(fp):
-    expected = 342190
-    actual = count_bytes(fp)
-    assert actual == expected
+def test_count(fp):
+    expected_lines = 7145
+    expected_words = 58164
+    expected_chars = 339292
+    expected_bytes = 342190
+    expected = (expected_lines, expected_words, expected_chars, expected_bytes)
 
+    actual = count(fp)
 
-def test_count_lines(fp):
-    expected = 7145
-    actual = count_lines(fp)
-    assert actual == expected
-
-
-def test_count_words(fp):
-    expected = 58164
-    actual = count_words(fp)
     assert actual == expected
