@@ -14,5 +14,10 @@ dependencies = [
     "click",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
 [project.scripts]
 ccwc = "ccwc.cli:app"
