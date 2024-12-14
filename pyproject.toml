@@ -10,6 +10,9 @@ authors =[
     {name = "Aaron Elmquist"},
 ]
 description = "python based wc"
+dependencies = [
+    "click",
+]
 
 [project.scripts]
 ccwc = "ccwc.cli:app"
