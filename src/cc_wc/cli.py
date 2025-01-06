@@ -1,6 +1,6 @@
 import click
 
-from ccwc.ccwc import count
+from .cc_wc import count
 
 help_text = """
 Print newline, word, and byte counts for each FILE, and a total line if
@@ -39,7 +39,7 @@ With no FILE, or when FILE is -, read standard input.
     "--characters",
     "count_characters",
     is_flag=True,
-    help="printn the character counts",
+    help="print the character counts",
 )
 def app(files, count_bytes, count_lines, count_words, count_characters):
     for file in files:

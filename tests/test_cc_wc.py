@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from src.ccwc.ccwc import count
+from src.cc_wc.cc_wc import count
 
 
 @pytest.fixture
