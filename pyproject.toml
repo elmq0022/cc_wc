@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "ccwc"
+name = "cc_wc"
 version = "0.0.1"
 requires-python = ">= 3.11"
 authors =[
@@ -20,4 +20,4 @@ dev = [
 ]
 
 [project.scripts]
-ccwc = "ccwc.cli:app"
+ccwc = "cc_wc.cli:app"
