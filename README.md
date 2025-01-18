@@ -17,7 +17,7 @@ Here's some of the things I got to practice with this project.
 4. [click](https://click.palletsprojects.com/en/stable/) for Python CLI tools
 5. As always testing with [pytest](https://docs.pytest.org/en/stable/)
 
-# Extending the Code
+## Extending the Code
 
 Given the simplicity of the project, there's not a lot of room for extension here.
 Still, some things I might consider to go further with this project are:
